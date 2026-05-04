@@ -2,7 +2,6 @@ const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 const twilio = require("twilio");
 
-// ✅ Use API KEY (NOT auth token)
 const client = twilio(
   process.env.TWILIO_API_KEY_SID,
   process.env.TWILIO_API_KEY_SECRET,
